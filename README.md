@@ -1,3 +1,4 @@
+![Logo](https://github.com/mercierjulien/pubfinder/blob/main/assets/undraw_refreshing_beverage_td3r.svg)
 
 # Pubfinder
 
