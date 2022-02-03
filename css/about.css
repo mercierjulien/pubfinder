@@ -1,0 +1,21 @@
+.about_banner{
+    margin-top: 77px;
+    height: 100vh;
+    width: 100%;
+    background-color: wheat;
+}
+
+.about_banner .row{
+    display: flex;
+    padding: 60px;
+}
+
+.about_block{
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    margin: auto;
+    border-radius: 20px;
+}

@@ -1,0 +1,198 @@
+.searchCocktail{
+    position: fixed;
+    top: 120px;
+    width: 400px;
+    height: 45px;
+    z-index: 9999;
+    border: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+    font-size: 24px;
+}
+
+.searchCocktail > input{
+    float: left;
+    width: 74.5%;
+    border: none !important;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    font-size: 24px;
+    padding-left: 5%;
+}
+
+.searchCocktail > .searchButton{
+    float: right;
+    padding: 10px;
+    width: 20%;
+    border: none;
+    height: 104%;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-size: 22px;
+}
+
+.searchCocktail > .filterButton{
+    position: absolute;
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%); /* décalage de 50% de sa propre taille */
+    width: 120px;
+    height: 25px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.searchCocktail > .filterButton:hover{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: var(--bg-color);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Could be more or less, depending on screen size */
+    border-radius: 40px;
+}
+
+.modal-body > #ingredient{
+    border: none;
+    height: 30px;
+    width: auto;
+    font-size: 16px;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    border-radius: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.modal-footer{
+    margin-top: 20px;
+}
+
+.modal-footer > input{
+    border: none;
+    height: 30px;
+    width: 25%;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .filterSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .filterSlider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .filterSlider {
+    background-color: var(--primary-color);
+  }
+  
+  input:focus + .filterSlider {
+    box-shadow: 0 0 1px var(--primary-color);
+  }
+  
+  input:checked + .filterSlider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .filterSlider.round {
+    border-radius: 34px;
+  }
+  
+  .filterSlider.round:before {
+    border-radius: 50%;
+  }
+
+#name{
+    float: left;
+    width: 50%;
+}
+
+.noResult{
+    margin-top: 100px;
+    filter: invert(80%);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
